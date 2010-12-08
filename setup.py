@@ -32,5 +32,6 @@ setup(name='smitheme.phoenix',
           'silva.core.views',
           'silva.core.conf',
           'silva.core.smi',
+          'silva.resourceinclude'
       ],
       )
