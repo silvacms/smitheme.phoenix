@@ -28,7 +28,7 @@ setup(name='smitheme.phoenix',
       zip_safe=False,
       install_requires=[
           'setuptools',
-	      'silva.core.layout',
+          'silva.core.layout',
           'silva.core.views',
           'silva.core.conf',
           'silva.core.smi',
