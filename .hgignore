@@ -1,0 +1,7 @@
+syntax: glob
+
+.svn
+.git
+*.pyc
+.DS_Store
+*.egg-info
