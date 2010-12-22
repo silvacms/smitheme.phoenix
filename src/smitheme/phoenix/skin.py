@@ -6,6 +6,7 @@ class ISMIPhoenixLayer(ISMILayer):
 
 
 class ISMIPhoenixSkin(ISMIPhoenixLayer):
+    silvaconf.resource('reset.css')
     silvaconf.resource('phoenix.css')
 
 
