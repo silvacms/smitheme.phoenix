@@ -1,6 +1,5 @@
-body {
+html body {
 	background: #333 url(body_bg.png) repeat-x top;
-	color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,19 +9,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 h1 {
-	font-size: 140%;
+	font-size: 120%;
 }
 h2 {
-	font-size: 125%;
-}
-h3 {
 	font-size: 115%;
 }
-h4 {
+h3 {
 	font-size: 110%;
 }
-h5 {
+h4 {
 	font-size: 105%;
+}
+h5 {
+	font-size: 102%;
 }
 h6 {
 	font-size: 100%;
@@ -57,9 +56,12 @@ a:hover {
 	display: none;
 }
 .pathbar a.breadcrumb {
-	font-size: 1.5em;
-	font-weight: bold;
+	font-size: 130%;
 	line-height: 45px;
+}
+.pathbar a.breadcrumb-last {
+	font-size: 140%;
+	font-weight: bold;
 }
 .pathbar a.manage {
 	display: inline-block;
@@ -102,6 +104,8 @@ a:hover {
 	padding: 4px 8px;
 	background-color: #888;
 	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	font-weight: bold;
 	color: #333;
 }
@@ -118,6 +122,8 @@ a:hover {
 	padding: 0 20px;
 	line-height: 26px;
 	border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
 	font-weight: bold;
 	color: #eee;
 }
@@ -139,21 +145,23 @@ a:hover {
 }
 
 .middleground {
-	height: 38px;
+	height: 30px;
 	background: #d9d9d9 url(middleground_bg.png) repeat-x top;
 	border-bottom: 1px #999 solid;
 }
 .middleground .transporter {
 	float: left;
 	padding: 0 15px;
-	line-height: 38px;
+	line-height: 30px;
 }
 .middleground .transporter a {
 	display: inline-block;
 	padding: 0 10px;
-	line-height: 25px;
+	line-height: 18px;
 	border: 1px #777 solid;
 	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 .middleground .transporter a:hover {
 	background-color: #f9f9f9;
@@ -168,12 +176,16 @@ a:hover {
 .middleground .executor {
 	float: right;
 	padding: 0 15px;
-	line-height: 35px;
+	line-height: 30px;
 }
 .middleground form.middleground-form {
 	display: inline;
 }
 
+#footerarea{
+	background: #fff url(workspace_bg.png);
+	background-color: inherit;
+}
 .footer {
 	clear: both;
 	height: 30px;
@@ -194,6 +206,8 @@ a:hover {
 	background-color: #777;
 	padding: 3px 8px;
 	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 }
 .personalbar div a:hover {
 	background-color: #fff;
@@ -269,14 +283,21 @@ table.listing img {
 
 /* ______________ rows ______________ */
 
-table.listing td.top {
+table.listing td.top, table.listing th.top {
 	padding: 3px 5px;
 	background: #eee url(gradient25.png) repeat-x;
 }
 
 table.listing tr.top-controls td {
 	padding: 0.1em 0.3em 0.1em 0.3em;
-	background-color: #333;
+	background: url(gradientdark.png) repeat-x;
+	color: #eee;
+}
+
+table.listing tr.top-controls h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
 }
 
 table.listing tr.inter-controls td {
@@ -284,13 +305,10 @@ table.listing tr.inter-controls td {
 }
 
 table.listing tr.controls td {
-	padding: 0 0.2em;
-	border-top: 1px solid #789;
+	padding: 0.3em 0.2em;
 }
 
 tr.divider td, td.divider {
-	height: 0.5em;
-	background-color: #89a; /* dark */
 }
 
 tr.separator td, td.separator {
@@ -312,12 +330,13 @@ table.listing td.top img {
 }
 
 table.listing th {
-	padding: 0.05em 0.3em;
-	background-color: #585858;
-	color: #eee;
+	padding: 0.2em 0.35em;
+	background: url(gradient25.png) repeat-x;
 	text-align: left;
 	border-top: none;
 	white-space: nowrap;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 table.listing th.listing-left, table.listing td.listing-left {
@@ -343,18 +362,11 @@ table.listing th.align-right, table.listing td.align-right {
 
 /* cycle text color in listing rows */
 table.listing tr.odd td {
-	background-color: #F3F7FB;
 }
 table.listing tr.even td {
+	background-color: #F3F7FB;
 }
 table.listing tr.odd:hover td, table.listing tr.even:hover td {
-}
-
-
-/* _______ subhead cells _______ */
-table.listing tr.top-controls h3 {
-	margin: 0;
-	padding: 0;
 }
 
 table.listing tr.inter-controls h3 {
@@ -385,8 +397,14 @@ table.listing a.icon img {
 
 /* __________________________ sidebar navigation _______ */
 
+div.navigation {
+	width: 250px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
 div.navigation table.listing th.top {
-	padding: 0;
+	color: #000;
 	border-bottom: none;
 	text-align: center;
 }
@@ -401,39 +419,32 @@ div.navigation table.listing th.subth {
 }
 
 /* _______ uplinks _______ */
-div.navigation table.listing a.top {
+div.navigation table.listing th.top a.top {
 	display: block;
 	float: left;
 	width: 1.4em;
 	padding: 0.4em 0.2em 0;
 }
 
-div.navigation table.listing a.up {
+div.navigation table.listing th a.up {
 	display: block;
 	float: right;
 	width: 1.4em;
 	padding: 0.4em 0.2em 0;
 }
 
-div.navigation table.listing a.top:hover {
-	padding: 0 0.2em 0;
-	border-style: solid solid none none;
-	text-decoration: none;
-}
-
-div.navigation table.listing a.up:hover {
-	padding: 0 0.2em 0;
-	text-decoration: none;
+div.navigation table.listing th a.top {
+	display: block;
+	float: left;
+	width: 1.4em;
+	padding: 0.4em 0.2em 0;
 }
 
 div.navigation td.selected {
-	padding-left: 0 ! important;
-	padding-right: 0 ! important;
-}
-
-div.navigation td.unselected {
-	padding-left: 0 ! important;
-	padding-right: 0 ! important;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: #eee;
+	font-weight: bold;
 }
 
 div.navigation td.unselected:hover {
@@ -487,11 +498,9 @@ textarea {
 input.store, textarea.store, input.field, textarea.field {
 	width: 99%;
 }
-input[type="text"] {
-	border-style: solid;
-	border-width: 1px;
-	margin: 2px 0;
-	padding: 2px 3px;
+
+table.listing td input[type="text"] {
+	margin-top: 5px;
 }
 
 /* valid ie6 and ie7 hack */
@@ -519,29 +528,25 @@ input[type="submit"] {
 
 /* _______ form labels _______ */
 
-label {
-	color: #403f80;
+table.listing td label {
+}
+table.listing th label {
 }
 
 tr.controls label, tr.inter-controls label {
-	color: #e0eefc;
 }
 
-th label {
-	color: #e0eefc;
-}
 
 /* _______ field iterators _______ */
 
 table.listing td.designator {
-	padding-top: 0.1em;
-	padding-bottom: 0.1em;
+	padding: 0.5em 0.3em;
 }
 table.listing td.designator label {
-	font-size: 115%;
+	font-weight: bold;
 }
 table.listing td.designator span.matchlabel {
-	font-size: 115%;
+	font-weight: bold;
 }
 table.listing td.designator p, td.designator ul,
 table.listing td.element p,
@@ -557,8 +562,7 @@ table.listing tr:hover td.field p {
 }
 table.listing td.element,
 table.listing td.field {
-	padding-top: 0.1em;
-	padding-right: 0.4em;
+	padding: 0.5em 0.3em;
 }
 
 /* _______ subscreen parent links _______ */
@@ -679,11 +683,16 @@ select.clipboard option.disabled {
 
 /* feedback under the matrix nav */
 div.fixed-feedback {
+	background-color: #D8EED5;
+	border-bottom: 1px solid #0E7F2A;
 	padding: 5px 15px 5px 15px;
+	margin-bottom: 4px;
 }
 div.fixed-alert {
-	height: 1%; /*hack for ie */
-  padding:5px 15px 5px 15px;
+	background-color: #EFAAAA;
+	border-bottom: 1px solid #C54D4B;
+	padding: 5px 15px 5px 15px;
+	margin-bottom: 4px;
 }
 div.fixed-clear {
 	height: 0;
@@ -1073,14 +1082,6 @@ button.calendar-button {
 	padding: 0 8px;
 }
 
-/* ___ navigation ___ */
-
-div.navigation {
-	width: 250px;
-	float: left;
-	margin: 0 10px 0 0;
-}
-
 /* ___ viewport ___ */
 
 .viewport {
@@ -1170,4 +1171,9 @@ div.tabs a.left {
 }
 div.tabs a.right {
 	display: none;
+}
+
+.ui-widget {
+	font-family: inherit;
+	font-size: inherit;
 }
