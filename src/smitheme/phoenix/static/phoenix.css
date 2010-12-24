@@ -274,6 +274,7 @@ table.columns1 td.main {
 table.listing {
 	width: 100%;
 	border: 1px solid #ccc;
+	border-collapse: separate;
 	background-color: #fff;
 }
 
@@ -613,16 +614,13 @@ table.listing td.element input[type="radio"] {
 
 /* ________________________________________________ info + clipboard _______ */
 div.info {
-	margin: -1px 0 0;
 	padding: 0.2em 0.4em 0.3em;
-	border: 1px solid #789;
-	color: #336;
-	background-color: #c6d2dd;
+	border: 1px solid #222;
+	background-color: #fff;
 }
 
 div.info h3 {
 	margin: 0.2em 0;
-	color: #336;
 }
 
 div.info h3 img {
@@ -977,8 +975,6 @@ table.listing tr.controls td span.required {
 
 /* defines the width of the text in help, etc */
 .readable {
-	width: 512px;
-	max-width: 40em;
 	line-height: 1.3em;
 }
 
@@ -1120,16 +1116,16 @@ float: right;
 /* jq ui widgets */
 
 .ui-widget div.fixed-alert {
-	padding: 0.2em;
+	padding: 0.2em 0.5em;
 	border: 1px solid #778899;
 	border-bottom: none;
 	height: 16px;
 }
 
 .add-new-content-listing {
-	border: 1px solid #778899;
-	background: #CFDBE7;
-	color: #444444;
+	padding: 0.2em 0.3em 0.3em;
+	border: 1px solid #ccc;
+	background-color: #fff;
 	margin: 0 0 1em;
 }
 
