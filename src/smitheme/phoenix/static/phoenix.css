@@ -223,12 +223,13 @@ a:hover {
 }
 #remote-request-loading {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 50%;
   color: black;
   padding: 0.1em 1.5em;
   border-left: 1px solid #0E7F2A;
+  border-right: 1px solid #0E7F2A;
   border-bottom: 1px solid #0E7F2A;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
