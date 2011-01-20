@@ -299,18 +299,17 @@ table.listing img {
 table.listing td.top, table.listing th.top {
   padding: 3px 5px;
   background: #eee url(gradient25.png) repeat-x;
+  border-bottom: 1px solid #ccc;
 }
 
 table.listing tr.top-controls td {
   padding: 0.1em 0.3em 0.1em 0.3em;
-  background: url(gradientdark.png) repeat-x;
-  color: #eee;
+  border-bottom: 1px solid #ccc;
 }
 
 table.listing tr.top-controls h3 {
   margin: 0;
   padding: 0;
-  font-weight: normal;
 }
 
 table.listing tr.inter-controls td {
@@ -336,6 +335,7 @@ table.listing td {
 table.listing td.top h2 {
   margin: 0;
   color: black;
+  font-weight: normal;
 }
 
 table.listing td.top img {
@@ -347,6 +347,7 @@ table.listing th {
   background: url(gradient25.png) repeat-x;
   text-align: left;
   border-top: none;
+  font-weight: normal;
   white-space: nowrap;
 }
 
