@@ -255,37 +255,38 @@ table.columns {
 /* 3 column table (default) */
 table.columns td.left {
   width: 20%;
-  padding: 0 8px 0 8px;
+  padding: 0 10px 0 10px;
 }
 table.columns td.main {
   width: 60%;
-  padding: 0 7px 0 0;
+  padding: 0 10px 0 0;
 }
 table.columns td.right {
   width: 20%;
-  padding: 0 8px 0 0;
+  padding: 0 10px 0 0;
 }
 
 /* 2 column table */
 table.columns2 td.left {
   width: 20%;
-  padding: 0 0 0 7px;
+  padding: 0 0 0 10px;
 }
 table.columns2 td.main {
   width: 80%;
-  padding: 0 7px 0 8px;
+  padding: 0 10px 0 0;
 }
 
 /* 1 column */
 table.columns1 td.main {
   width: 100%;
-  padding: 0 7px 0 7px;
+  padding: 0 10px 0 10px;
 }
 
 /* _______________________________ listing table _______ */
 
 table.listing {
   width: 100%;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-collapse: separate;
   background-color: #fff;
