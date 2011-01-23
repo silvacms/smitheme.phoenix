@@ -322,13 +322,15 @@ table.listing tr.controls td {
   border-top: 1px solid #ededed;
 }
 
-table.listing tr.divider td, td.divider {
-  border-top: 1px solid #aaa;
+table.listing tr.divider td, table.listing td.divider {
   padding: 0;
+  border-top: 1px solid #aaa;
 }
 
-table.listing tr.separator td, td.separator {
+table.listing tr.separator td, table.listing td.separator {
   height: 1px;
+  padding: 0;
+  border-top: 1px solid #aaa;
 }
 
 /* ______________ cells ______________ */
