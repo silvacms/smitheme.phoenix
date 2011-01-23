@@ -83,9 +83,10 @@ a:hover {
   height: 16px;
   text-indent: -999em;
   margin-top: 13px;
-  background-image: url(info.png);
+/*background-image: url(info.png);
   background-repeat: no-repeat;
   background-position: center top;
+*/
 }
 .pathbar a.idea:hover {
   background-position: 0 -16px;
@@ -100,8 +101,8 @@ a:hover {
 }
 .tabs a.transportlet {
   display: inline-block;
-  margin-top: 2px;
-  padding: 4px 8px;
+  margin-top: 4px;
+  padding: 3px 8px;
   background-color: #888;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -303,7 +304,7 @@ table.listing td.top, table.listing th.top {
 }
 
 table.listing tr.top-controls td {
-  padding: 0.1em 0.3em 0.1em 0.3em;
+  padding: 0.2em 0.3em 0.1em;
   border-bottom: 1px solid #ccc;
 }
 
@@ -317,14 +318,17 @@ table.listing tr.inter-controls td {
 }
 
 table.listing tr.controls td {
-  padding: 0.3em 0.2em;
+  padding: 0.3em 0.2em 0.2em;
+  border-top: 1px solid #ededed;
 }
 
-tr.divider td, td.divider {
+table.listing tr.divider td, td.divider {
+  border-top: 1px solid #aaa;
+  padding: 0;
 }
 
-tr.separator td, td.separator {
-  height: 0.5em;
+table.listing tr.separator td, td.separator {
+  height: 1px;
 }
 
 /* ______________ cells ______________ */
@@ -347,6 +351,7 @@ table.listing th {
   background: url(gradient25.png) repeat-x;
   text-align: left;
   border-top: none;
+  color: #555;
   font-weight: normal;
   white-space: nowrap;
 }
@@ -374,9 +379,10 @@ table.listing th.align-right, table.listing td.align-right {
 
 /* cycle text color in listing rows */
 table.listing tr.odd td {
+  background-color: #fdfdfd;
 }
 table.listing tr.even td {
-  background-color: #F3F7FB;
+  background-color: #f7f7f7;
 }
 table.listing tr.odd:hover td, table.listing tr.even:hover td {
 }
