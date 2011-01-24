@@ -255,7 +255,7 @@ table.columns {
 /* 3 column table (default) */
 table.columns td.left {
   width: 20%;
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 10px;
 }
 table.columns td.main {
   width: 60%;
@@ -641,6 +641,7 @@ div.info {
 
 div.info h3 {
   margin: 0.2em 0;
+  font-weight: normal;
 }
 
 div.info h3 img {
