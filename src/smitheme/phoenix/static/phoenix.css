@@ -197,11 +197,11 @@ a:hover {
   line-height: 30px;
   background: #d9d9d9 url(middleground_bg.png) repeat-x top;
   border-top: 1px #999 solid;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .personalbar {
   background: #333;
-  padding: 5px 10px;
+  padding: 5px 15px 10px;
 }
 .personalbar a {
   text-decoration: none;
@@ -462,8 +462,8 @@ div.navigation table.listing th a.top {
 }
 
 div.navigation td.selected {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
   background-color: #eee;
   font-weight: bold;
 }
@@ -624,18 +624,28 @@ input[type="checkbox"] {
   border: none;
 }
 
-table.listing input.field-textline {
-  width: 94%;
+div.multi-actions {
+  margin: 0.5em 0 0 1.7em;
+}
+div.multi-actions input {
+  text-transform: lowercase;
+}
+input[type="checkbox"] + input[type="hidden"] + input.field-textline {
+  width: 94%; /* shortens field-textline when in a multi-actioned field */
 }
 
+table.listing td.element input[type="checkbox"] {
+  margin: 0 0.4em 0.4em 0;
+}
 table.listing td.element input[type="radio"] {
   margin: 0.2em 0.2em 0.2em 0;
 }
 
+
 /* ________________________________________________ info + clipboard _______ */
 div.info {
   padding: 0.2em 0.4em 0.3em;
-  border: 1px solid #222;
+  border: 1px solid #ccc;
   background-color: #fff;
 }
 
@@ -814,8 +824,7 @@ dd {
 }
 
 ul {
-  margin-top: 0.2em;
-  padding-left: 1.4em;
+  margin: 0.2em 0 0 1.3em;;
   line-height: 130%;
 }
 
