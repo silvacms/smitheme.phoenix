@@ -996,7 +996,7 @@ table.listing tr.controls td span.required {
 .subhead {
   color: #333767;
   font-weight: bold;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 .idea {
