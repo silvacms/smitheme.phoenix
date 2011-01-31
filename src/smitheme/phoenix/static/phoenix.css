@@ -156,8 +156,7 @@ a:hover {
 }
 .middleground .transporter {
   float: left;
-  padding: 0 15px;
-  line-height: 30px;
+  padding: 0.3em 15px;
 }
 .middleground .transporter a {
   display: inline-block;
@@ -180,8 +179,7 @@ a:hover {
 }
 .middleground .executor {
   float: right;
-  padding: 0 15px;
-  line-height: 30px;
+  padding: 0.3em 15px;
 }
 .middleground form.middleground-form {
   display: inline;
@@ -490,13 +488,11 @@ table.listing a.navicon {
 }
 
 table.listing a.left:hover {
-  background-image: url(slideleft.gif);
   background-color: transparent;
   text-decoration: none;
 }
 
 table.listing a.right:hover {
-  background-image: url(slideright.gif);
   background-color: transparent;
   text-decoration: none;
 }
