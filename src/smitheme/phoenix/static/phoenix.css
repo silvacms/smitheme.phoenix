@@ -368,6 +368,7 @@ table.listing th.listing-left, table.listing td.listing-left {
 table.listing th.listing-right, table.listing td.listing-right {
   width: 7%;
   text-align: right;
+  white-space: nowrap;
 }
 
 table.listing th.align-left, table.listing td.align-left {
@@ -443,22 +444,15 @@ div.navigation table.listing th.subth {
 div.navigation table.listing th.top a.top {
   display: block;
   float: left;
-  width: 1.4em;
-  padding: 0.4em 0.2em 0;
+  width: 1.2em;
+  padding: 0.2em 0 0;
 }
 
 div.navigation table.listing th a.up {
   display: block;
   float: right;
-  width: 1.4em;
-  padding: 0.4em 0.2em 0;
-}
-
-div.navigation table.listing th a.top {
-  display: block;
-  float: left;
-  width: 1.4em;
-  padding: 0.4em 0.2em 0;
+  width: 1.2em;
+  padding: 0.2em 0 0;
 }
 
 div.navigation td.selected {
