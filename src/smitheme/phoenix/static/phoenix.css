@@ -698,6 +698,13 @@ select.clipboard option.disabled {
   background: #678;
 }
 
+div.info div.refitem img.icon {
+  float: left;
+}
+div.info div.refitem p {
+  margin-left: 20px;
+  margin-right: 18px;
+}
 
 /* ________________________________________________________ feedback _______ */
 
