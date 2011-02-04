@@ -761,6 +761,36 @@ table.listing tr.alert, table.listing td.alert {
   border-bottom: 1px solid #789;
 }
 
+/* _______ simple-page layout selectors _______ */
+
+div.simple-page {
+  position: relative;
+  top: -15px;
+  width: 40em;
+  margin: 50px auto 0;
+  padding: 20px;
+  -moz-box-shadow: 0px 0px 15px white;
+  -webkit-box-shadow: 0px 0px 15px white;
+  box-shadow: 0px 0px 15px white;
+}
+div.notification h1 {
+  margin: 0 0 0.5em;
+}
+div.notification p {
+  margin: 0.5em 0;
+}
+div.notification a:link, div.notification a:visited {
+  color: blue;
+}
+div.notification div.actions {
+  margin-top: 1em;
+  padding: 1em 0 0;
+  border-top: 1px solid #555;
+}
+div.notification input#form-action-break-references { /* confirm button */
+  float:right;
+}
+
 
 /* _______ message box in content publish screen _______ */
 table.listing .message {
@@ -776,6 +806,7 @@ table.listing div.message {
 
 
 /* ___________________________________________ Silva specific styles _______ */
+
 img {
   border: none;
 }
