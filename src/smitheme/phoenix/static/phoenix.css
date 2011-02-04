@@ -773,22 +773,19 @@ div.simple-page {
   -webkit-box-shadow: 0px 0px 15px white;
   box-shadow: 0px 0px 15px white;
 }
-div.notification h1 {
+div.simple-page div.notification h1 {
   margin: 0 0 0.5em;
 }
-div.notification p {
+div.simple-page div.notification p {
   margin: 0.5em 0;
 }
-div.notification a:link, div.notification a:visited {
+div.simple-page div.notification a:link, div.notification a:visited {
   color: blue;
 }
-div.notification div.actions {
+div.simple-page div.notification div.controls {
   margin-top: 1em;
   padding: 1em 0 0;
   border-top: 1px solid #555;
-}
-div.notification input#form-action-break-references { /* confirm button */
-  float:right;
 }
 
 
