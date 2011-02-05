@@ -532,6 +532,10 @@ td.element select.field, select.store {
   width: 98%;
 }
 
+form.middleground-form select { /* ie7 fix */
+  width:auto;
+}
+
 input[type="submit"] {
   overflow: visible;
   cursor: pointer;
@@ -609,7 +613,7 @@ input[type="radio"] {
   border: none;
 }
 input[type="checkbox"] {
-  margin: 0 0.4em 0 0;
+  margin: 0 0.4em 0.2em 0;
   width: auto;
   border: none;
 }
@@ -625,7 +629,8 @@ input[type="checkbox"] + input[type="hidden"] + input.field-textline {
 }
 
 table.listing td.element input[type="checkbox"] {
-  margin: 0 0.4em 0.4em 0;
+  width:auto; /* for IE7 */
+  margin: 0 0.4em 0.2em 0;
 }
 table.listing td.element input[type="radio"] {
   margin: 0.2em 0.2em 0.2em 0;
@@ -1013,6 +1018,10 @@ table.listing tr.controls td span.required {
 .error {
   color: #cc0000;
   background: transparent;
+}
+
+.not-found {
+  color: #000;
 }
 
 .fault {
