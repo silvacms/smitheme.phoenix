@@ -1162,7 +1162,7 @@ button.calendar-button {
 width: 130px;
 float: right;
 }
-*:first-child+htmlform.middleground-form select { /* ie7 fix */
+*:first-child+html form.middleground-form select { /* ie7 fix */
   width: 15em;
 }
 
