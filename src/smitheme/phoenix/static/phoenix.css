@@ -532,10 +532,6 @@ td.element select.field, select.store {
   width: 98%;
 }
 
-form.middleground-form select { /* ie7 fix */
-  width:auto;
-}
-
 input[type="submit"] {
   overflow: visible;
   cursor: pointer;
@@ -1165,6 +1161,9 @@ button.calendar-button {
 * html .zeam-form span.footer-fields select {
 width: 130px;
 float: right;
+}
+*:first-child+htmlform.middleground-form select { /* ie7 fix */
+  width: 15em;
 }
 
 .zeam-form .footer-fields span.error {
