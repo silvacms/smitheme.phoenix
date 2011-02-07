@@ -36,7 +36,7 @@ i, em {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #000;
   background-color: transparent;
 }
 a:hover {
@@ -1163,7 +1163,7 @@ width: 130px;
 float: right;
 }
 *:first-child+html form.middleground-form select { /* ie7 fix */
-  width: 15em;
+  width: auto;
 }
 
 .zeam-form .footer-fields span.error {
