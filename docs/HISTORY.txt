@@ -3,8 +3,8 @@ smitheme.phoenix
 ================
 
 
-smitheme.phoenix 1.0 (unreleased)
----------------------------------
+1.0.1 (2012/02/23)
+------------------
 
-- ...
+- Add CSS for list form widgets.
 
