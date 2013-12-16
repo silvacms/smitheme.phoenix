@@ -9,7 +9,7 @@ version = '1.0.2dev'
 
 setup(name='smitheme.phoenix',
       version=version,
-      description="New SMI Skin",
+      description="SMI Skin for Silva 2.3",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
@@ -19,7 +19,7 @@ setup(name='smitheme.phoenix',
       keywords='skin silva smi',
       author='Gert Hengeveld',
       author_email='info@infrae.com',
-      url='http://infrae.com/products/silva',
+      url='https://github.com/silvacms/smitheme.phoenix',
       license='BSD',
       package_dir={'': 'src'},
       packages=find_packages('src'),
